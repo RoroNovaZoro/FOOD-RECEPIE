@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Landing Page - With Background Video Slider | #Foodies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="brand">#Foodies</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="#">Home>></a>
+          <a href="#">About</a>
+          <a href="#">Explore</a>
+          <a href="#">Gallery</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </header>
+    <section class="home">
+      <video class="video-slide active" src="1.mp4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="2.mp4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="3.mp4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="4.mp4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="5.mp4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="6.mp4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="7.mp4.mp4" autoplay muted loop></video>
+      <div class="content active">
+        <h1>Sea<br><span>Food</span></h1>
+        <p>The harvesting of wild seafood is usually known as fishing or hunting, while the cultivation and farming of seafood is known as aquaculture or fish farming (in the case of fish). Seafood is often colloquially distinguished from meat; vegetarians who consume seafood as the only source of meat are said to adhere to pescetarianism. Seafood is an important source of (animal) protein in many diets around the world, especially in coastal areas.</p>
+        <a href="#">Know More--></a>
+      </div>
+      <div class="content">
+        <h1>SPICY FISH FRY<br><span>DISH</span></h1>
+        <p>You could use small variety of black sole or murrel
+          fish which taste extremely good. Fish fry can be 
+          made in the easiest manner possible by using the 
+          different techniques of frying. You could use 
+          readymade store bought fish fry masala or make your
+          own to coat your fish to fry.</p>
+        <a href="#">Know More--></a>
+      </div>
+      <div class="content">
+        <h1>SPICY PRAWN FRY<br><span>DISH</span></h1>
+        <p> Prawn fry recipe is a seafood dish to try out and 
+          prawns fry is shallow fried in a little bit of oil
+          and I must say the recipe turned out amazing. I 
+          basically, try my hands at fish and when I tried 
+          my hands on making prawn fry I was amazed at its 
+          taste.Many tend to cook prawns without cleaning
+          and removing the intestinal tract as it is not
+          extremely harmful but I would suggest removing 
+          them as it contains all the impurities which may
+          affect in the long run with regular consumption.</p>
+        <a href="#">Know More--></a>
+      </div>
+      <div class="content">
+        <h1>GRILLED OCTOPUS<br><span>DISH</span></h1>
+        <p>Light a grill or preheat a grill pan. Brush the octopus with the 3 tablespoons of olive oil. Grill over moderately high heat, turning, until lightly charred, about 4 minutes. Arrange the octopus on the platter with the potatoes. Drizzle with the lemon juice and more olive oil. Sprinkle with the paprika, flaky sea salt and parsley leaves; serve.</p>
+        <a href="#">Know More--></a>
+      </div>
+      <div class="content">
+        <h1>LOBSTER<br><span>DISH</span></h1>
+        <p>Lobster tails can be intimidating when starring at them in a case at a grocery store but I am here to tell you they are easy and make a holiday or dinner turn into an extra special night. Most ingredients you already have at home even!After preparing your lobster tails, you will make a butter garlic herb that will be brushed over each of the meat sticking out. I can’t tell you how delicious this is! It is the best part and what makes this lobster meat turn to a golden yellow when baking.</p>
+        <a href="#">Know More--></a>
+      </div>
+      <div class="content">
+        <h1>CRAB<br><span>DISH</span></h1>
+        <p>Toasting whole spices and aromatics in oil over low heat helps draw out fat-soluble flavor compounds and triggers complex reactions that improves their aroma.
+          We cook the spiced tomato mixture until the fat breaks out into droplets on the surface. This is an indication that the moisture content has reduced sufficiently to intensify flavors.</p>
+        <a href="#">Know More--></a>
+      </div>
+      <div class="content">
+        <h1>SALMON<br><span>DISH</span></h1>
+        <p>Cooking salmon on the stovetop is the ultimate in 
+          ease:if you don't want to heat ur oven or spend 
+          too much time in front of it, sautéing a fillet 
+          is the way to go. Or if you're looking for a damn 
+          low-fat option, poaching of salmon produces fine
+          tenders, clean-tasting fish.Salty: lower-sodium
+          soy sauce, capers, miso, olive sweet: honey, brown
+          sugar, maple syrup, orange juice or zest.Sour: fresh
+          lemon, fresh lime, vinegar.Pungent: onion, shallot,
+          garlic, ginger, horseradish, sesame.Creamy: cream 
+          cheese, yogurt, crème fraîche, butter.
+</p>
+        <a href="food.html">Know More</a>
+      </div>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+      
+    </section>
+
+    <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+
+  </body>
+</html>
